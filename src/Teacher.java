@@ -13,8 +13,6 @@ public class Teacher extends Person {
         return Subject;
     }
 
-    //idk lol
-
     public String setSubject {
         this.Subject = Subject;
     }
