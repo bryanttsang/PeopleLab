@@ -1,30 +1,27 @@
 public class Student extends Person
 {
     private double GPA;
-    private String Sex;
+    private int Grade;
     private int Age;
 
-    public Student(double GPA)
+    public Student(double GPA, int Grade, int Age, String firstName, String familyName)
     {
-        super("", "");
+        super(firstName, familyName);
         this.GPA = GPA;
-        this.Sex = Sex;
+        this.Grade = Grade;
         this.Age = Age;
     }
 
-    @Override
     public double getGPA()
     {
         return GPA;
     }
 
-    @Override
-    public String getSex()
+    public int getGrade()
     {
-        return Sex;
+        return Grade;
     }
 
-    @Override
     public int getAge()
     {
         return Age;
@@ -33,6 +30,6 @@ public class Student extends Person
     @Override
     public String toString()
     {
-        return familyName + ", " + firstName;
+        return this.getFamilyName() + ", " + this.getFirstName();
     }
 }
