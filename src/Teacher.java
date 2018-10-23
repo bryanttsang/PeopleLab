@@ -9,11 +9,16 @@ public class Teacher extends Person {
         this.Title = Title;
     }
 
-    public String getSubject {
+    public String getSubject() {
         return Subject;
     }
 
-    public String setSubject {
-        this.Subject = Subject;
+    public String getTitle() {
+        return Title;
+    }
+
+    @Override
+    public String toString() {
+        return this.getTitle() + ". " + this.getFamilyName();
     }
 }
