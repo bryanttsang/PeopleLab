@@ -4,7 +4,7 @@ public class Student extends Person
     private int Grade;
     private int Age;
 
-    public Student(double GPA, int Grade, int Age, String firstName, String familyName)
+    public Student(String firstName, String familyName, double GPA, int Grade, int Age)
     {
         super(firstName, familyName);
         this.GPA = GPA;
