@@ -8,6 +8,12 @@ public class Classroom {
         this.teacher = teacher;
     }
 
+    public String getSubject() {
+        return this.teacher.getSubject();
+    }
 
+    public double classAverage() {
+        //idk lol
+    }
 
 }
