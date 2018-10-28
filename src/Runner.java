@@ -12,15 +12,20 @@ public class Runner {
         Student[] students = new Student[5];
 
         for (int i = 0; i < students.length; i++) {
-            students[i] = new Student(firstName[i], familyName[i], Math.random()*4, Grade[i], Age[i]);
-            System.out.println(students[i]);
+            students[i] = randomStudent();
         }
 
         Classroom classroom = new Classroom(students, teacher);
         classroom.printClass();
     }
 
-    public static void randomStudent() {
-        // incomplete still, we need to build a method that will randomly generate a student's information
+    public static Student randomStudent() {
+        int nameIndex = (int)(5*Math.random());
+        int surnameIndex = (int)(5*Math.random());
+        int gradeIndex = (int)(5*Math.random());
+        int ageIndex = (int)(5*Math.random());
+        double GPA = (double)(4*Math.random());
+
+        return new Student (firstName[nameIndex], familyName[surnameIndex], GPA, Grade[gradeIndex], Age[ageIndex]);
     }
 }
